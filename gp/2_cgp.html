@@ -35,66 +35,36 @@
 				    </section>
 
 
-        <section data-background-video="video/solaris.mp4" data-background-color="#000000">
+        <!-- <section data-background-video="video/solaris.mp4" data-background-color="#000000">
           <h1>Evolving simple programs for playing Atari games</h1>
           <br/>
           <div class="textbox">
               Dennis G Wilson, Sylvain Cussat-Blanc, Hervé Luga
           </div>
-				</section>
+				</section> -->
 
 				<!-- <section> -->
-        <section data-background-video="video/krull.mp4" data-background-color="#000000">
-					<h2>Overview</h2>
-					<ul>
-						<li>Arcade Learning Environment</li>
-						<li>Cartesian Genetic Programming</li>
-						<li>Atari playing with CGP</li>
-            <li>Example programs from results</li>
-					</ul>
-				</section>
-
-				<section>
-            <section data-background-video="video/asteroids.mp4" data-background-color="#000000">
-                <h2>Arcade Learning Environment</h2>
-                <p>[Bellemare et al., 2013]</p>
-                <ul>
-                    <li>HyperNEAT [Hausknecht, 2012]</li>
-                    <li>DQN [Mnih et al., 2015]</li>
-                    <li>Dueling DQN [Wang et al., 2015]</li>
-                    <li>Prioritized experience replay [Schaul et al., 2015]</li>
-                    <li>Double DQN [Hasselt et al., 2016]</li>
-                    <li>A3C [Mnih et al., 2016]</li>
-                    <li>Tangled Problem Graphs [Kelly and Heywood, 2017]</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Deep reinforcement learning</h2>
-                <img class="plain" src="figs/dqn.png">
-                <p><small>[Mnih et al., 2015]</small></p>
-            </section>
-            <section>
-                <h2>HyperNEAT: Multiple representations</h2>
-                <img class="plain" src="figs/hyperneat.png">
-                <p><small>[Hausknecht, 2012]</small></p>
-            </section>
-            <section>
-                <h2>TPG: Decimal Feature Grid</h2>
-                <img class="plain" src="figs/tpg.png">
-                <p><small>[Kelly and Heywood, 2017]</small></p>
-            </section>
-            <section>
-                <h2>TPG: Multi-Task Learning</h2>
-                <img class="plain" src="figs/tpg_multi.png" height="500">
-                <p><small>[Kelly and Heywood, 2017]</small></p>
-            </section>
+        <section>
+            <h2>Overview</h2>
+            <ul>
+                <li>Cartesian Genetic Programming</li>
+                <li>MuJoCo Environments</li>
+                <li>Controlling MuJoCo robots with CGP</li>
+                <li>Arcade Learning Environment</li>
+                <li>Atari playing with CGP</li>
+            </ul>
         </section>
 
-				<section>
+        <section>
             <section>
                 <h2>Cartesian Genetic Programming</h2>
                 <img class="plain" src="figs/cgp/cgp.png">
-                <p><small>[Miller, 2011]</small></p>
+                <br />
+                A <b>graph-based</b> GP method based on functional node indexing with Cartesian coordinates.
+                <div class="source">
+                    Miller, Julian Francis. "Cartesian genetic programming: its status and future." Genetic
+                    Programming and Evolvable Machines 21 (2020): 129-168.
+                </div>
             </section>
             <section>
                 <h2>Floating Point Cartesian Genetic Programming</h2>
@@ -130,7 +100,61 @@
 
         </section>
 
-				<section>
+        <section>
+            <h2>MuJoCo Control Tasks</h2>
+            <p>[Todorov et al., 2012]</p>
+            <img class="plain" src="figs/mujoco.png" height="auto" width="80%">
+        </section>
+
+        <section>
+            <section>
+                <h2>CGP for robot control/h2>
+                <img class="plain" src="figs/AlgoG.png"><br/>
+                GA (population size of 100 individuals), running on GPU<br/>
+                Fitness: Total reward over 1 episode (e.g., how fast the robot moved)
+            </section>
+            <section>
+                <h2>CGP for robot control</h2>
+                <img class="plain" src="figs/walle0.png">
+                <img class="plain fragment fade-out" src="figs/walle0.png">
+                <img class="plain fragment fade-in" src="figs/walle1.png">
+
+                <img class="plain fragment fade-out" src="figs/walle1.png">
+                <img class="plain fragment fade-in" src="figs/walle2.png">
+
+                <img class="plain fragment fade-out" src="figs/walle2.png">
+                <img class="plain fragment fade-in" src="figs/walle3.gif">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Arcade Learning Environment</h2>
+                <p>[Bellemare et al., 2013]</p>
+            </section>
+            <section>
+                <h2>Deep reinforcement learning</h2>
+                <img class="plain" src="figs/dqn.png">
+                <p><small>[Mnih et al., 2015]</small></p>
+            </section>
+            <!-- <section>
+                <h2>HyperNEAT: Multiple representations</h2>
+                <img class="plain" src="figs/hyperneat.png">
+                <p><small>[Hausknecht, 2012]</small></p>
+            </section> -->
+            <section>
+                <h2>TPG: Decimal Feature Grid</h2>
+                <img class="plain" src="figs/tpg.png">
+                <p><small>[Kelly and Heywood, 2017]</small></p>
+            </section>
+            <section>
+                <h2>TPG: Multi-Task Learning</h2>
+                <img class="plain" src="figs/tpg_multi.png" height="500">
+                <p><small>[Kelly and Heywood, 2017]</small></p>
+            </section>
+        </section>
+
+        <section>
             <section>
                 <h2>CGP for Atari playing</h2>
                 <img class="plain" src="figs/AlgoG.png"><br/>
@@ -155,7 +179,7 @@
             </section>
         </section>
 
-				<section>
+        <section>
             <section data-background-video="video/defender.mp4" data-background-color="#000000">
                 <h2>Results</h2>
             </section>
