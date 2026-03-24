@@ -133,6 +133,28 @@
 
         <section>
             <section>
+                <h2>Results</h2>
+                <img class="plain" src="figs/mujocoresults.png">
+            </section>
+            <section>
+                <h2>Interpreting a result</h2>
+                <img class="plain" src="figs/swimmer.png">
+            </section>
+            <section>
+                <h2>Interesting side finding</h2>
+                <p>Result obtained removing the termination condition when the agent falls to the ground.</p>
+                <iframe 
+                    src="https://giorgia-nadizar.github.io/cgpax/hopper_cgp_flying" 
+                    width="800" 
+                    height="600" 
+                    style="border: none;" 
+                    allowfullscreen>
+                </iframe>
+            </section>
+        </section>
+
+        <section>
+            <section>
                 <h2>Arcade Learning Environment</h2>
                 <p>[Bellemare et al., 2013]</p>
                 <img class="plain" src="figs/ale.png">
@@ -185,8 +207,82 @@
         </section>
 
         <section>
-            <section data-background-video="video/defender.mp4" data-background-color="#000000">
+                <section>
                 <h2>Results</h2>
+                <small>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game</th> <th>Human</th> <th>Double</th>
+                            <th>DQN</th> <th>Prioritized</th> <th>A3C:FF</th>
+                            <th>HyperNEAT</th> <th>CGP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Asteroids</td> <td>13157</td> <td>1193.2</td>
+                            <td>2035.4</td> <td>1654</td> <td>4474.5</td>
+                            <td>1694</td>
+                            <td>9412</td>
+                        </tr>
+                        <tr>
+                            <td>Defender</td> <td></td> <td>27510</td>
+                            <td>33996</td> <td>21093.5</td> <td>56533</td>
+                            <td>14620</td>
+                            <td>993010</td>
+                        </tr>
+                        <tr>
+                            <td>Gravitar</td> <td>2672</td> <td>200.5</td>
+                            <td>297</td> <td>218</td> <td>303.5</td>
+                            <td>370</td>
+                            <td>2350</td>
+                        </tr>
+                        <tr>
+                            <td>JamesBond</td> <td>406.7</td> <td>573</td>
+                            <td>835.5</td> <td>3511.5</td> <td>541</td>
+                            <td>5660</td> <td>6130</td>
+                        </tr>
+                        <tr>
+                            <td>Kangaroo</td> <td>3035</td> <td>11204</td>
+                            <td>10334</td> <td>10241</td> <td>94</td>
+                            <td>800</td> <td>1400</td>
+                        </tr>
+                        <tr>
+                            <td>Krull</td> <td>2395</td> <td>6796.1</td>
+                            <td>8051.6</td> <td>7406.5</td> <td>5560</td>
+                            <td>12601.4</td> <td>9086.8</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Pacman</td> <td>15693</td> <td>1241.3</td>
+                            <td>2250.6</td> <td>1824.6</td> <td>653.7</td>
+                            <td>3408</td> <td>2568</td>
+                        </tr>
+                        <tr>
+                            <td>Private Eye</td> <td>69571</td> <td>-575.5</td>
+                            <td>292.6</td> <td>179</td> <td>206.9</td>
+                            <td>10747.4</td> <td>12702.2</td>
+                        </tr>
+                        <tr>
+                            <td>Skiing</td> <td></td> <td>-11490.4</td>
+                            <td>-11928</td> <td>-10852.8</td> <td>-10911.1</td>
+                            <td>-7983.6</td> <td>-9011</td>
+                        </tr>
+                        <tr>
+                            <td>Solaris</td> <td></td> <td>810</td>
+                            <td>1768.4</td> <td>2238.2</td> <td>1956</td>
+                            <td>160</td> <td>8324</td>
+                        </tr>
+                        <tr>
+                            <td>YarsRevenge</td> <td></td> <td>6270.6</td>
+                            <td>25976.5</td> <td>5965.1</td> <td>7157.5</td>
+                            <td>24096.4</td> <td>28838.2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+                Two years later: <a href="https://arxiv.org/abs/2003.13350">Agent 57</a> outperforms many of these
+                </small>
             </section>
 
             <section>
@@ -275,84 +371,6 @@
                         </tr>
                     </tbody>
                 </table>
-                </small>
-            </section>
-
-            <section>
-                <h2>Comparison</h2>
-                <small>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Game</th> <th>Human</th> <th>Double</th>
-                            <th>DQN</th> <th>Prioritized</th> <th>A3C:FF</th>
-                            <th>HyperNEAT</th> <th>CGP</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Asteroids</td> <td>13157</td> <td>1193.2</td>
-                            <td>2035.4</td> <td>1654</td> <td>4474.5</td>
-                            <td>1694</td>
-                            <td>9412</td>
-                        </tr>
-                        <tr>
-                            <td>Defender</td> <td></td> <td>27510</td>
-                            <td>33996</td> <td>21093.5</td> <td>56533</td>
-                            <td>14620</td>
-                            <td>993010</td>
-                        </tr>
-                        <tr>
-                            <td>Gravitar</td> <td>2672</td> <td>200.5</td>
-                            <td>297</td> <td>218</td> <td>303.5</td>
-                            <td>370</td>
-                            <td>2350</td>
-                        </tr>
-                        <tr>
-                            <td>JamesBond</td> <td>406.7</td> <td>573</td>
-                            <td>835.5</td> <td>3511.5</td> <td>541</td>
-                            <td>5660</td> <td>6130</td>
-                        </tr>
-                        <tr>
-                            <td>Kangaroo</td> <td>3035</td> <td>11204</td>
-                            <td>10334</td> <td>10241</td> <td>94</td>
-                            <td>800</td> <td>1400</td>
-                        </tr>
-                        <tr>
-                            <td>Krull</td> <td>2395</td> <td>6796.1</td>
-                            <td>8051.6</td> <td>7406.5</td> <td>5560</td>
-                            <td>12601.4</td> <td>9086.8</td>
-                        </tr>
-                        <tr>
-                            <td>Ms. Pacman</td> <td>15693</td> <td>1241.3</td>
-                            <td>2250.6</td> <td>1824.6</td> <td>653.7</td>
-                            <td>3408</td> <td>2568</td>
-                        </tr>
-                        <tr>
-                            <td>Private Eye</td> <td>69571</td> <td>-575.5</td>
-                            <td>292.6</td> <td>179</td> <td>206.9</td>
-                            <td>10747.4</td> <td>12702.2</td>
-                        </tr>
-                        <tr>
-                            <td>Skiing</td> <td></td> <td>-11490.4</td>
-                            <td>-11928</td> <td>-10852.8</td> <td>-10911.1</td>
-                            <td>-7983.6</td> <td>-9011</td>
-                        </tr>
-                        <tr>
-                            <td>Solaris</td> <td></td> <td>810</td>
-                            <td>1768.4</td> <td>2238.2</td> <td>1956</td>
-                            <td>160</td> <td>8324</td>
-                        </tr>
-                        <tr>
-                            <td>YarsRevenge</td> <td></td> <td>6270.6</td>
-                            <td>25976.5</td> <td>5965.1</td> <td>7157.5</td>
-                            <td>24096.4</td> <td>28838.2</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br/>
-                <br/>
-                Two years later: <a href="https://arxiv.org/abs/2003.13350">Agent 57</a> outperforms many of these
                 </small>
             </section>
         </section>
