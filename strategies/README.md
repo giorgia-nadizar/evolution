@@ -13,9 +13,6 @@ example of using CMA-ES to search for neural network parameters.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/strategies/CMAES.ipynb)
 
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/strategies/Neuroevolution.ipynb)
-
 Videos
 
 * [Evolutionary Strategies](https://youtu.be/ds66pV7Ob0U)
