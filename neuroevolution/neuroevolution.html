@@ -464,17 +464,19 @@
         <br/><br/>
         No topology evolution:
         <br/>
-        - Architecture is fixed
-        <br/>
-        - Only parameters are evolved
+        <ul>
+            <li>Architecture is fixed</li>
+            <li>Only parameters are evolved</li>
+        </ul>
+
         <br/><br/>
         Key idea:
         <br/>
-        - Treat neural network as a black box
-        <br/>
-        - Search directly in parameter space
-        <br/>
-        - Yet another numerical optimization problem
+        <ul>
+            <li>Treat neural network as a black box</li>
+            <li>Search directly in parameter space</li>
+            <li>Yet another numerical optimization problem</li>
+        </ul>
     </section>
 
     <section>
@@ -483,13 +485,12 @@
         <br/><br/>
         At each iteration:
         <br/>
-        - Sample random noise ε
-        <br/>
-        - Evaluate θ + ε
-        <br/>
-        - Compute rewards (fitness)
-        <br/>
-        - Update θ toward "better" directions
+        <ul>
+            <li>Sample random noise ε</li>
+            <li>Evaluate θ + ε</li>
+            <li>Compute rewards (fitness)</li>
+            <li>Update θ toward "better" directions</li>
+        </ul>
         <br/><br/>
         No gradients required
     </section>
@@ -498,15 +499,20 @@
         <h2>Key Advantages</h2>
         Simple and highly parallelizable
         <br/><br/>
-        - Each evaluation is independent
-        <br/>
-        - Scales to thousands of workers
+        <ul>
+            <li>Each evaluation is independent</li>
+            <li>Scales to thousands of workers</li>
+            <li>Enables massively parallelism (GPU friendly)</li>
+        </ul>
+
         <br/><br/>
         Works well for:
         <br/>
-        - Reinforcement learning tasks
-        <br/>
-        - Sparse or delayed rewards
+        <ul>
+            <li>Reinforcement learning tasks</li>
+            <li>Sparse or delayed rewards</li>
+        </ul>
+
         <br/><br/>
         Can outperform gradient-based RL in some settings
     </section>
@@ -517,28 +523,35 @@
         <br/><br/>
         Examples:
         <br/>
-        - Atari games (e.g. Pong)
-        <br/>
-        - Continuous control tasks
+        <ul>
+            <li>Atari games (e.g. Pong)</li>
+            <li>Continuous control tasks</li>
+        </ul>
+
         <br/><br/>
         Observations:
         <br/>
-        - Robust policies can emerge
-        <br/>
-        - Noise can still produce structured behavior
+        <ul>
+            <li>Robust policies can emerge</li>
+            <li>Noise can still produce structured behavior</li>
+        </ul>
     </section>
 
     <section>
         <h2>Limitations</h2>
         High-dimensional search space
-        <br/><br/>
-        - Millions of parameters
         <br/>
-        - Requires many evaluations
+        <ul>
+            <li>Millions of parameters</li>
+            <li>Requires many evaluations</li>
+        </ul>
+
         <br/><br/>
         No structure learning:
         <br/>
-        - Architecture must be predefined
+        <ul>
+            <li>Architecture must be predefined</li>
+        </ul>
         <br/><br/>
         Sample inefficiency compared to gradients
     </section>
@@ -566,11 +579,11 @@
         <br/><br/>
         Three perspectives:
         <br/>
-        - Evolution Strategies → optimize parameters
-        <br/>
-        - NEAT → evolve structure
-        <br/>
-        - HyperNEAT → evolve patterns
+        <ul>
+            <li>Evolution Strategies → optimize parameters</li>
+            <li>NEAT → evolve structure</li>
+            <li>HyperNEAT → evolve patterns</li>
+        </ul>
         <br/><br/>
         Choice depends on problem structure and scalability needs
     </section>
