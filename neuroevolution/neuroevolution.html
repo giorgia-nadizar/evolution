@@ -433,6 +433,123 @@
         </div>
     </section>
 
+    <section>
+        <h2>Evolution Strategies for Deep Networks</h2>
+        Optimize weights of deep neural networks
+        <br/><br/>
+        No topology evolution:
+        <br/>
+        - Architecture is fixed
+        <br/>
+        - Only parameters are evolved
+        <br/><br/>
+        Key idea:
+        <br/>
+        - Treat neural network as a black box
+        <br/>
+        - Search directly in parameter space
+        <br/>
+        - Yet another numerical optimization problem
+    </section>
+
+    <section>
+        <h2>How It Works</h2>
+        Start with parameters θ
+        <br/><br/>
+        At each iteration:
+        <br/>
+        - Sample random noise ε
+        <br/>
+        - Evaluate θ + ε
+        <br/>
+        - Compute rewards (fitness)
+        <br/>
+        - Update θ toward "better" directions
+        <br/><br/>
+        No gradients required
+    </section>
+
+    <section>
+        <h2>Key Advantages</h2>
+        Simple and highly parallelizable
+        <br/><br/>
+        - Each evaluation is independent
+        <br/>
+        - Scales to thousands of workers
+        <br/><br/>
+        Works well for:
+        <br/>
+        - Reinforcement learning tasks
+        <br/>
+        - Sparse or delayed rewards
+        <br/><br/>
+        Can outperform gradient-based RL in some settings
+    </section>
+
+    <section>
+        <h2>Applications</h2>
+        Trained agents directly from pixels
+        <br/><br/>
+        Examples:
+        <br/>
+        - Atari games (e.g. Pong)
+        <br/>
+        - Continuous control tasks
+        <br/><br/>
+        Observations:
+        <br/>
+        - Robust policies can emerge
+        <br/>
+        - Noise can still produce structured behavior
+    </section>
+
+    <section>
+        <h2>Limitations</h2>
+        High-dimensional search space
+        <br/><br/>
+        - Millions of parameters
+        <br/>
+        - Requires many evaluations
+        <br/><br/>
+        No structure learning:
+        <br/>
+        - Architecture must be predefined
+        <br/><br/>
+        Sample inefficiency compared to gradients
+    </section>
+
+    <section>
+        <h2>NEAT vs HyperNEAT vs ES</h2>
+        Evolution Strategies:
+        <br/>
+        - Optimize weights only
+        <br/><br/>
+        NEAT:
+        <br/>
+        - Evolves weights + topology
+        <br/><br/>
+        HyperNEAT:
+        <br/>
+        - Evolves generative patterns of connectivity
+        <br/><br/>
+        Different levels of evolution: parameters → structure → patterns
+    </section>
+
+    <section>
+        <h2>Takeaway</h2>
+        Evolution can scale to deep learning
+        <br/><br/>
+        Three perspectives:
+        <br/>
+        - Evolution Strategies → optimize parameters
+        <br/>
+        - NEAT → evolve structure
+        <br/>
+        - HyperNEAT → evolve patterns
+        <br/><br/>
+        Choice depends on problem structure and scalability needs
+    </section>
+
       </div>
       <div id="footer-container" style="display:none;">
           <div id="footer">
