@@ -36,3 +36,11 @@ def evaluate_with_hof(predators, prey, hof_pred, hof_prey):
             prey_fitness[j] += distance
 
     return predator_fitness, prey_fitness
+
+    
+# cooperative coevolution
+def component_a(x, params):
+    return params[0] * x * x 
+
+def component_b(x, params):
+    return params[1] * x + params[2]
