@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>7.1 Behavior and Novelty</title>
+		<title>Behavior and Novelty</title>
 
 		<link rel="stylesheet" href="../reveal/css/reset.css">
 		<link rel="stylesheet" href="../reveal/css/reveal.css">
@@ -136,7 +136,7 @@
             <img src="../imgs/rastrigin.gif" width="40%">
             <br/>
             <div class="textbox">
-                We need to encourage diversity in the <b>behavior space</b>, ie behavioral diversity.
+                We need to encourage diversity in the <b>behavior space</b>, i.e., behavioral diversity.
             </div>
         </section>
 
@@ -174,16 +174,12 @@
             <h2>Novelty Search</h2>
             <br/>
             <ul>
-                <li>During evolution, keep an behavior archive</li>
+                <li>During evolution, keep a behavior archive</li>
                 <li>For each individual $x$, find $k$ nearest neighbors $\mu$ in current population or behavior archive</li>
                 <li>Calculate average distance $\rho(x) = \frac{1}{k}\sum_{i=0}^k dist(x, \mu_i)$</li>
                 <li>if $\rho(x) > \rho_{\texttt{min}}$, add $x$ to the archive</li>
                 <li>Select individuals based on $\rho$</li>
             </ul>
-            <br/>
-            <br/>
-            <a href="http://eplex.cs.ucf.edu/noveltysearch/userspage/demo.html">Demonstration</a>
-            <br/>
             <br/>
             <div class="textbox">
                 <small>
@@ -247,18 +243,45 @@
         </section>
 
         <section>
-            <h2>Multi-modal optimization</h2>
+            <h2>Multi-modal Optimization & Quality Diversity</h2>
             <br/>
             <div class="textbox" style="width:70%;">
             <ul>
-                <li>Quality diversity is similar to multi-objective optimization: maximize objective function and novelty metric</li>
-                <li>Similar to multi-modal optimization: find many different good solutions</li>
-                <li>Focus on finding <b>niches</b> at the same time or stored in an archive</li>
-                <li>Mahfoud, Samir W. Niching methods for genetic algorithms. Diss. University of Illinois at Urbana-Champaign, 1995.</li>
-                <li>Preuss, Mike. Multimodal optimization by means of evolutionary algorithms. Springer International Publishing, 2015.</li>
-                <li>Combination with QD a current topic</li>
-                <li>The difference: quality diversity search is <b>divergent</b>, looking for <b>new behaviors</b></li>
+                <li>Multi-modal optimization:
+                    <br/>
+                    → Find many different high-quality solutions (multiple optima)
+                </li>
+                <br/>
+                <li>Quality Diversity (QD):
+                    <br/>
+                    → Maximize performance <b>and</b> behavioral diversity
+                </li>
+                <br/>
+                <li>Key concept: <b>niches</b>
+                    <br/>
+                    → Different regions of the behavior space
+                    <br/>
+                    → Solutions stored in an archive
+                </li>
+                <br/>
+                <li>Relation to multi-objective optimization:
+                    <br/>
+                    → Objective: performance
+                    <br/>
+                    → Additional pressure: novelty / diversity
+                </li>
+                <br/>
+                <li>Main difference:
+                    <br/>
+                    → QD is <b>divergent</b>
+                    <br/>
+                    → Explicitly searches for <b>new behaviors</b>, not just optima
+                </li>
             </ul>
+            </div>
+            <br/>
+            <div class="textbox">
+                <small>Mahfoud (1995), Preuss (2015) — Niching and multimodal optimization are key foundations of QD</small>
             </div>
         </section>
 
@@ -273,9 +296,9 @@
       </div>
       <div id="footer-container" style="display:none;">
           <div id="footer">
-              Evolutionary Computation by Dennis G. Wilson
+              Evolutionary Computation by Dennis G. Wilson, Giorgia Nadizar
               <br />
-              <a href="https://github.com/d9w/evolution/">https://github.com/d9w/evolution/</a>
+              <a href="https://github.com/giorgia-nadizar/evolution/">https://github.com/giorgia-nadizar/evolution/</a>
               <br />
               <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
           </div>
