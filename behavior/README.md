@@ -8,7 +8,7 @@ algorithm in depth. Finally, we look at coevolutionary algorithms.
 
 
 [Quality diversity notebook](https://github.com/giorgia-nadizar/evolution/blob/master/behavior/qd_lunar_lander.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/giorgia-nadizar/evolution/blob/master/behavior/qd_lunar_lander.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/giorgia-nadizar/evolution/blob/master/behavior/qd_lunar_lander.ipynb)
 
 1. Behavior and Novelty
     * [slides](https://giorgia-nadizar.github.io/evolution/behavior/1_novelty.html)
