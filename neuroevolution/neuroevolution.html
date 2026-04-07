@@ -168,6 +168,126 @@
             </small>
         </div>
     </section>
+
+    <section>
+        <h2>What is NEAT?</h2>
+        NeuroEvolution of Augmenting Topologies (NEAT)
+        <br/><br/>
+        Evolves both:
+        <br/>
+        - Network weights
+        <br/>
+        - Network topology (structure)
+        <br/><br/>
+        Starts from simple networks and gradually complexifies
+        <br/><br/>
+        <div class="textbox">
+            <small>Key idea: begin minimal and add complexity only when needed</small>
+        </div>
+    </section>
+    <section>
+        <h2>Genome Representation</h2>
+        Neural networks are encoded as genomes
+        <br/><br/>
+        Two types of genes:
+        <br/>
+        - Node genes (neurons)
+        <br/>
+        - Connection genes (synapses)
+        <br/><br/>
+        Each connection gene contains:
+        <br/>
+        - Input node
+        <br/>
+        - Output node
+        <br/>
+        - Weight
+        <br/>
+        - Enabled / disabled flag
+        <br/>
+        - Innovation number
+        <br/><br/>
+        Direct encoding: each gene directly maps to the network
+    </section>
+    <section>
+        <h2>Innovation Numbers</h2>
+        Problem: how to align genes during crossover?
+        <br/><br/>
+        Solution: innovation numbers
+        <br/><br/>
+        - Each new structural mutation gets a unique ID
+        <br/>
+        - Tracks historical origin of genes
+        <br/><br/>
+        During crossover:
+        <br/>
+        - Matching genes → same innovation number
+        <br/>
+        - Disjoint genes → non-overlapping
+        <br/>
+        - Excess genes → beyond the other parent
+        <br/><br/>
+        <div class="textbox">
+            <small>Enables meaningful crossover between different topologies</small>
+        </div>
+    </section>
+    <section>
+        <h2>Structural Mutations</h2>
+        NEAT evolves topology through mutations
+        <br/><br/>
+        Add connection:
+        <br/>
+        - Connect two previously unconnected nodes
+        <br/><br/>
+        Add node:
+        <br/>
+        - Split an existing connection
+        <br/>
+        - Disable old connection
+        <br/>
+        - Insert new node
+        <br/>
+        - Add two new connections
+        <br/><br/>
+        <div class="textbox">
+            <small>Complexity increases gradually while preserving learned behavior</small>
+        </div>
+    </section>
+    <section>
+        <h2>Speciation</h2>
+        Problem: new structures are initially weak
+        <br/><br/>
+        Solution: speciation
+        <br/><br/>
+        - Group similar genomes into species
+        <br/>
+        - Competition happens within species
+        <br/><br/>
+        Benefits:
+        <br/>
+        - Protects innovation
+        <br/>
+        - Maintains diversity
+        <br/>
+        - Avoids premature convergence
+    </section>
+    <section>
+        <h2>Fitness Sharing</h2>
+        Individuals share fitness within their species
+        <br/><br/>
+        Adjusted fitness:
+        <br/>
+        - Penalizes crowded species
+        <br/>
+        - Rewards smaller species
+        <br/><br/>
+        Outcome:
+        <br/>
+        - Maintains multiple strategies
+        <br/>
+        - Encourages exploration
+    </section>
+
     <section>
         <h2>Indirect Encoding</h2>
         <img src="../imgs/cellular_encoding_2.png" width="40%">
