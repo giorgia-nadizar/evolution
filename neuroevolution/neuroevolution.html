@@ -191,101 +191,110 @@
         <br/><br/>
         Two types of genes:
         <br/>
-        - Node genes (neurons)
-        <br/>
-        - Connection genes (synapses)
+        <ul>
+            <li>Node genes (neurons)</li>
+            <li>Connection genes (synapses)</li>
+        </ul>
+
         <br/><br/>
         Each connection gene contains:
-        <br/>
-        - Input node
-        <br/>
-        - Output node
-        <br/>
-        - Weight
-        <br/>
-        - Enabled / disabled flag
-        <br/>
-        - Innovation number
+        <ul>
+            <li>Input node</li>
+            <li>Output node</li>
+            <li>Weight</li>
+            <li>Enabled / disabled flag</li>
+            <li>Innovation number</li>
+        </ul>
         <br/><br/>
         Direct encoding: each gene directly maps to the network
     </section>
+
     <section>
         <h2>Innovation Numbers</h2>
         Problem: how to align genes during crossover?
         <br/><br/>
         Solution: innovation numbers
-        <br/><br/>
-        - Each new structural mutation gets a unique ID
         <br/>
-        - Tracks historical origin of genes
+        <ul>
+            <li>Each new structural mutation gets a unique ID</li>
+            <li>Tracks historical origin of genes</li>
+        </ul>
+        
         <br/><br/>
         During crossover:
         <br/>
-        - Matching genes → same innovation number
-        <br/>
-        - Disjoint genes → non-overlapping
-        <br/>
-        - Excess genes → beyond the other parent
+        <ul>
+            <li>Matching genes → same innovation number</li>
+            <li>Disjoint genes → non-overlapping</li>
+            <li>Excess genes → beyond the other parent</li>
+        </ul>
+
         <br/><br/>
-        <div class="textbox">
-            <small>Enables meaningful crossover between different topologies</small>
-        </div>
+        Enables meaningful crossover between different topologies
     </section>
+
     <section>
         <h2>Structural Mutations</h2>
         NEAT evolves topology through mutations
         <br/><br/>
         Add connection:
         <br/>
-        - Connect two previously unconnected nodes
+        <ul>
+            <li>Connect two previously unconnected nodes</li>
+        </ul>
+
         <br/><br/>
         Add node:
         <br/>
-        - Split an existing connection
-        <br/>
-        - Disable old connection
-        <br/>
-        - Insert new node
-        <br/>
-        - Add two new connections
+        <ul>
+            <li>Split an existing connection</li>
+            <li>Disable old connection</li>
+            <li>Insert new node</li>
+            <li>Add two new connections</li>
+        </ul>
+
         <br/><br/>
-        <div class="textbox">
-            <small>Complexity increases gradually while preserving learned behavior</small>
-        </div>
+        Complexity increases gradually while preserving learned behavior
     </section>
+
     <section>
         <h2>Speciation</h2>
         Problem: new structures are initially weak
         <br/><br/>
         Solution: speciation
         <br/><br/>
-        - Group similar genomes into species
-        <br/>
-        - Competition happens within species
+        <ul>
+            <li>Group similar genomes into species</li>
+            <li>Competition happens within species</li>
+        </ul>
         <br/><br/>
         Benefits:
         <br/>
-        - Protects innovation
-        <br/>
-        - Maintains diversity
-        <br/>
-        - Avoids premature convergence
+        <ul>
+            <li>Protects innovation</li>
+            <li>Maintains diversity</li>
+            <li>Avoids premature convergence</li>
+        </ul>
     </section>
+
     <section>
         <h2>Fitness Sharing</h2>
         Individuals share fitness within their species
         <br/><br/>
         Adjusted fitness:
         <br/>
-        - Penalizes crowded species
-        <br/>
-        - Rewards smaller species
+        <ul>
+            <li>Penalizes crowded species</li>
+            <li>Rewards smaller species</li>
+        </ul>
+
         <br/><br/>
         Outcome:
         <br/>
-        - Maintains multiple strategies
-        <br/>
-        - Encourages exploration
+        <ul>
+            <li>Maintains multiple strategies</li>
+            <li>Encourages exploration</li>
+        </ul>
     </section>
 
     <section>
