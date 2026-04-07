@@ -14,7 +14,7 @@ Schedule |
 25/03 | [Genetic Programming](gp) | [Symbolic Regression](gp)
 08/04 | [Evolutionary Strategies](strategies)
 09/04 | [Multi-Objective Evolution](moo)
-13/04 | [Neuroevolution](neuroevolution)
+13/04 | [Neuroevolution](neuroevolution) | [Coevolution](coevolution)
 15/04 | [Behavior and Novelty](behavior)
 17/04 | [Project](project)
 20/04 | [Project](project)
