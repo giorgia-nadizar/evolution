@@ -300,6 +300,125 @@
             </small>
         </div>
     </section>
+
+    <section>
+        <h2>Direct vs Indirect Encoding</h2>
+        Direct encoding (NEAT):
+        <br/>
+        - One gene = one component
+        <br/>
+        - Explicit representation
+        <br/><br/>
+        Indirect encoding:
+        <br/>
+        - Genes describe rules or patterns
+        <br/>
+        - Network is generated (not stored)
+        <br/><br/>
+        Advantages:
+        <br/>
+        - More compact genomes
+        <br/>
+        - Regular and repeating structures
+        <br/>
+        - Better scalability
+    </section>
+
+    <section>
+        <h2>Limitations of Direct Encoding</h2>
+        Direct encoding struggles with:
+        <br/><br/>
+        - Large networks
+        <br/>
+        - Regular patterns (e.g., symmetry)
+        <br/>
+        - Repeating structures
+        <br/><br/>
+        Because:
+        <br/>
+        - Each connection must be encoded individually
+        <br/><br/>
+        <i>Indirect encoding addresses these limitations</i>
+    </section>
+
+    <section>
+        <h2>What is HyperNEAT?</h2>
+        Extension of NEAT using indirect encoding
+        <br/><br/>
+        Evolves a function instead of a network:
+        <br/>
+        - Called a CPPN (Compositional Pattern Producing Network)
+        <br/>
+        <img src="../imgs/cppn.png" width="40%">
+        <br/>
+        The CPPN:
+        <br/>
+        - Takes coordinates as input
+        <br/>
+        - Outputs connection weights
+        <br/>
+        - Generates connectivity patterns instead of listing connections
+    </section>
+
+    <section>
+        <h2>How HyperNEAT Works</h2>
+        Each neuron is assigned coordinates in space
+        <br/><br/>
+        For each pair of neurons:
+        <br/>
+        - Input: (x₁, y₁, x₂, y₂)
+        <br/>
+        - CPPN outputs connection weight
+        <br/><br/>
+        This creates:
+        <br/>
+        - Structured connectivity
+        <br/>
+        - Spatial regularities
+        <br/><br/>
+        Example patterns:
+        <br/>
+        - Symmetry
+        <br/>
+        - Repetition
+        <br/>
+        - Local connectivity
+    </section>
+
+    <section>
+        <h2>Why HyperNEAT is Powerful</h2>
+        Exploits geometry of the problem
+        <br/><br/>
+        Advantages:
+        <br/>
+        - Scales to large networks
+        <br/>
+        - Produces regular patterns
+        <br/>
+        - Reuses structure automatically
+        <br/><br/>
+        Compared to NEAT:
+        <br/>
+        - NEAT: explicit connections
+        <br/>
+        - HyperNEAT: generated connections
+    </section>
+
+    <section>
+        <h2>Takeaway</h2>
+        Direct encoding:
+        <br/>
+        - Precise but not scalable
+        <br/><br/>
+        Indirect encoding:
+        <br/>
+        - Compact and expressive
+        <br/>
+        - Captures patterns and regularities
+        <br/><br/>
+        HyperNEAT = NEAT + generative encoding of connectivity</small>
+    </section>
+
     <section>
         <h2>Evolution of Deep Neural Networks</h2>
 	<img src="../imgs/openai_pong.png" width="30%">
