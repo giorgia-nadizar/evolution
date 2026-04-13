@@ -16,3 +16,7 @@ This tutorial will provide you with helpful resources, including slides, interac
 Videos
 
 * [Neuroevolution](https://youtu.be/9NwBjoQKjOw)
+
+Interesting papers
+* [Evolution of plasticity rules](https://proceedings.neurips.cc/paper/2020/file/ee23e7ad9b473ad072d57aaa9b2a5222-Paper.pdf)
+* [Evolution of neural network structure without focusing on the weights](https://proceedings.neurips.cc/paper/2019/file/e98741479a7b998f88b8f8c9f0b6b6f1-Paper.pdf)
