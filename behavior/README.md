@@ -17,6 +17,8 @@ algorithm in depth.
 
 Notebooks
 
+* [MAP-Elites introductory notebook](https://github.com/jbmouret/map_elites_tutorial/blob/main/map_elites.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jbmouret/map_elites_tutorial/blob/main/map_elites.ipynb)
 * [Quality diversity notebook](https://github.com/giorgia-nadizar/evolution/blob/master/behavior/qd_lunar_lander.ipynb)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/giorgia-nadizar/evolution/blob/master/behavior/qd_lunar_lander.ipynb)
 * [Quality diversity and genetic programming notebook](https://github.com/giorgia-nadizar/evolution/blob/master/behavior/lgp_qd.ipynb)
