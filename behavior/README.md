@@ -4,7 +4,7 @@
 In this class, we discuss how evolution should account for behavior. We start
 with an introduction to behavioral diversity, then look at novelty search and
 Quality Diversity algorithms. In the second section, we cover the MAP-Elites
-algorithm in depth. Finally, we look at coevolutionary algorithms.
+algorithm in depth. 
 
 
 [Quality diversity notebook](https://github.com/giorgia-nadizar/evolution/blob/master/behavior/qd_lunar_lander.ipynb)
@@ -16,7 +16,4 @@ algorithm in depth. Finally, we look at coevolutionary algorithms.
 2. Quality Diversity
     * [slides](https://giorgia-nadizar.github.io/evolution/behavior/2_qd.html)
     * [video](https://youtu.be/Pip0qQypMJA)
-3. Coevolutionary Algorithms
-    * [slides](https://giorgia-nadizar.github.io/evolution/behavior/3_coevo.html)
-    * [video](https://youtu.be/W9fAjEcXsmY)
 
