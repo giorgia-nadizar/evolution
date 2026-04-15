@@ -1,7 +1,8 @@
 # Project - Evolution of agents
 
-This project focuses on the evolution of agents using the [EvoGym](https://evolutiongym.github.io) suite. To get started
-with evogym, see the [documentation](https://evolutiongym.github.io/documentation).
+This project can be done **in pairs**.
+It focuses on the evolution of agents using the [EvoGym](https://evolutiongym.github.io) suite. 
+To get started with evogym, see the [documentation](https://evolutiongym.github.io/documentation).
 
 [Neuroevolution in evogym notebook](https://github.com/d9w/evolution/blob/master/project/evogym.ipynb)
 
@@ -20,26 +21,43 @@ You will need to evolve movement policies for three tasks independently:
 + Thrower-v0 (medium)
 + Climb-v2 (hard) 
 
-You have a budget of 10000 **evaluations** for evolution (for example, a
-population of 10 for 1000 generations).  Each evaluation can have 500 maximum
-steps, but you are encouraged to reduce this and the total number of
-evaluations while making algorithm decisions to have faster results.  You
-choose the evolutionary algorithm, gene representation, and evolutionary
-hyperparameters, but you must demonstrate that you only used the allocated
-evaluation budget. The goal is to obtain the best score independently on each
-task. Scores should be shown in your final presentation as the average best
+You have a budget of 5.000.000 **steps** for evolution 
+(for example, a population of 10 for 1000 generations with simulation of 500 steps).  
+Each evaluation can have 500 maximum steps, but you can reduce this in the early stages of evolution if needed.
+You choose the evolutionary algorithm, gene representation, and evolutionary
+hyperparameters, but you must demonstrate that you only used the allocated evaluation budget.
+To do so, you might want to show optimization logs, evolution plots, ... (you can take inspiration from research
+papers in this domain to come up with nice and interesting visualizations).
+The goal is to obtain the best score **independently** on each task---but you might also want to try to optimize something
+that solves all three tasks at once. 
+Scores should be shown in your final presentation as the average best
 score over **at least 2 independent evolutions**.
 
-For each task, points will be allocated to teams in the following
-manner:
+For each task, points will be allocated to teams depending on performance (see below).
 
-+ 1st place: 5 points
-+ 2nd place: 4 points
-+ 3rd place: 3 points
-+ 4th place: 2 points
-+ 5th place: 1 point
+---
 
-Project presentations will take place on Tuesday, May 7th.
+## Presentation & Evaluation (20 points total)
+
+- **Date:** Thursday, May 7  
+- **Duration:** ~10 minutes per team  
+- **Language:** French or English, you can choose what feels more comfortable to you.
+- **Format:** You may include videos, code snippets, methodology, parameters, and unsuccessful attempts.  
+- **Interaction:** All teams are encouraged to ask and answer questions.
+
+### Grading Criteria
+*(Same base score per team member; small adjustments possible via Q&A)*
+
+- **4 pts – Performance:** Ranking across the three tasks (averaged and normalized)  
+- **8 pts – Clarity:** How clearly you explain your work so it can be understood and reproduced  
+- **2 pts – Visualizations:** Quality and usefulness of visual outputs  
+- **1 pt – Novelty:** Creativity or originality in approach  
+- **2 pts – Questions:** Asking and answering after presentations 
+- **3 pts – Technical Soundness:** Rigor and correctness of experiments and methods
+
+---
+
+## Code sources
 
 You can use the code provided during class for your evolutionary algorithms, and you can also use any code online. Some popular libraries are:
 
