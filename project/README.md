@@ -14,6 +14,7 @@ To get started with evogym, see the [documentation](https://evolutiongym.github.
 
 
 For this project, you'll run the code locally. To build the minimal environment for this project, you'll find the necessary information in this [file](https://github.com/d9w/evolution/blob/master/project/setup_env.md).
+You can fork [this minimal repo](https://github.com/echigot/project_evolution) that contains the main project files.
 
 You will need to evolve movement policies for three tasks independently:
 
